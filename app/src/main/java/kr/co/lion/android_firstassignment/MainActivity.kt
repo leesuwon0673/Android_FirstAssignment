@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     // 메모 제목과 내용 작성날짜를 담아둘 리스트
     companion object{
         var saveList = mutableListOf<SaveData>()
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         setToolbar()
         setRecyclerView()
         setEvent()
+
     }
     // 런처 설정
     fun setLauncher(){
@@ -75,6 +77,7 @@ class MainActivity : AppCompatActivity() {
                 title = "메모 관리"
                 // 메뉴
                 inflateMenu(R.menu.main_menu)
+
             }
         }
     }
